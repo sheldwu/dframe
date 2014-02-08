@@ -14,10 +14,10 @@ class smtp_mail{
             'server' => 'smtp.163.com',
             'port' => 25,
             'auth' => 1,
-            'username' => 'wuxudong23@163.com',
-            'password' => '82469591',
+            'username' => 'yourname',
+            'password' => 'youpass',
             'charset' => 'utf8',
-            'mailfrom' => 'wuxudong23@163.com'
+            'mailfrom' => 'from'
         );
     }
 
