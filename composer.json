@@ -1,0 +1,29 @@
+{
+    "name" : "weixin_beeper",
+    "description" : "weixin_beeper composer",
+    "config" : {
+        "vendor-dir"    : "Vendor",
+        "secure-http"   : false
+    },
+    "repositories" : [
+        {
+            "type" : "composer",
+            "url" : "http://packagist.int.jumei.com/"
+        },
+        {
+            "packagist": false
+        }
+    ],
+    "scripts" : {
+        "post-install-cmd" : [
+            "rm -rf Vendor/composer && rm -rf Vendor/autoload.php"
+        ],
+        "post-update-cmd" : [
+            "rm -rf Vendor/composer && rm -rf Vendor/autoload.php"
+        ]
+    },
+    "require" : {
+        "Bootstrap" : "1.0.0",
+        "Redis" : "0.4.0-beta"
+    }
+}
